@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Video</title>
+</head>
+<body>
+    <h1>Download {{ video.title }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        <input type="password" name="download_password" placeholder="Enter download password">
+        <button type="submit">Download</button>
+    </form>
+</body>
+</html>
